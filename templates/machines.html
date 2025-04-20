@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Machines - Your Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your Navigation here -->
+  <nav>
+    <ul>
+      
+    </ul>
+  </nav>
+
+  <h1>Machines</h1>
+  <div class="gallery">
+    <img src="{{ url_for('get_image', file_id=file_ids['product1']) }}" alt="Product 1">
+    <img src="{{ url_for('get_image', file_id=file_ids['product2']) }}" alt="Product 2">
+    <img src="{{ url_for('get_image', file_id=file_ids['product3']) }}" alt="Product 3">
+  </div>
+</body>
+</html>
