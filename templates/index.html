@@ -14,6 +14,16 @@
       background: #fff;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+    .logo {
+       display: flex;
+       align-items: center;
+       width: 300px;  /* or match the width the text used to occupy */
+    }
+    .logo img {
+       height: 30%;        /* adjust this height to match the red text area */
+       width: 110%;
+       display: block;
+    }
     .nav-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -119,7 +129,12 @@
   <!-- Header Section -->
   <header>
     <div class="nav-container">
-      <div class="logo">BRUNDAVAN PACKAGING</div>
+      <!-- div class="logo">BRUNDAVAN PACKAGING</div> -->
+      <div class="logo">
+      <a href="/">
+        <img src="/static/logo.png" alt="Brundavan Packaging Logo">
+      </a>
+      </div> 
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -166,6 +181,47 @@
       <div class="product">
         <img src="/static/product4.jpeg" alt="Label Labels">
         <h3>Labels</h3>
+      </div>
+    </div>
+  </section>
+  <!-- Company Information Section -->
+  <section class="company-info">
+    <div class="info-container">
+      <!-- Our Company -->
+      <div class="info-block">
+        <h3>OUR COMPANY</h3>
+        <div class="underline"></div>
+        <div class="company-gallery">
+          <img src="/static/company1.jpg" alt="Company Image 1">
+          <img src="/static/company2.jpg" alt="Company Image 2">
+          <img src="/static/company3.jpg" alt="Company Image 3">
+          <img src="/static/company4.jpg" alt="Company Image 4">
+          <img src="/static/company5.jpg" alt="Company Image 5">
+          <img src="/static/company6.jpg" alt="Company Image 6">
+        </div>
+      </div>
+  
+      <!-- Manufacturing Plant -->
+      <div class="info-block">
+        <h3>MANUFACTURING PLANT</h3>
+        <div class="underline"></div>
+        <p>Plot No: 9-40/32-7, Tiruchanooru Road,<br>
+        Tirupati – Pin Code: 517503<br>
+        Andhra Pradesh - India.</p>
+        <p>📞 +91-9066135999</p>
+        <p>📱 +91-9513031322</p>
+        <p>✉️ info@brundavanpackaging.com</p>
+      </div>
+  
+      <!-- Marketing Office -->
+      <div class="info-block">
+        <h3>MARKETING OFFICE</h3>
+        <div class="underline"></div>
+        <p>19-8-113/3, R.C.Road, Near Raithu Bazar<br>
+        Tirupati - 517501 Andhra Pradesh – India.</p>
+        <p>📞 +91-9066135999</p>
+        <p>📱 +91-9513031322</p>
+        <p>✉️ gmsales@brundavanpackaging.com</p>
       </div>
     </div>
   </section>
